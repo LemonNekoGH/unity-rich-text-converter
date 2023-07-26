@@ -1,17 +1,19 @@
 {
-  "name": "unity-rich-text-converter",
+  "name": "@lemonneko/unity-rich-text-converter",
   "version": "0.1.8",
   "description": "npm pacpage with typescript to converter message between unity rich text and http rich text.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "mocha --reporter spec --require ts-node/register test/**/*.ts"
+    "test": "vitest run",
+    "lint": "eslint src/**/*.ts"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AWaterColorPen/unity-rich-text-converter.git"
-  },
+  "fils": [
+    "dist"
+  ],
+  "main": "dist/unity-rich-text-converter.js",
+  "module": "dist/unity-rich-text-converter.mjs",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/LemonNekoGH/unity-rich-text-converter",
   "keywords": [
     "typescript",
     "unity",
@@ -20,15 +22,18 @@
   "author": "hellis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AWaterColorPen/unity-rich-text-converter/issues"
+    "url": "https://github.com/LemonNekoGH/unity-rich-text-converter/issues"
   },
-  "homepage": "https://github.com/AWaterColorPen/unity-rich-text-converter#readme",
+  "homepage": "https://github.com/LemonNekoGH/unity-rich-text-converter#readme",
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^12.12.30",
-    "mocha": "^10.2.0",
-    "ts-node": "^8.6.2",
-    "tslint": "^5.20.1",
-    "typescript": "^3.8.3"
+    "@antfu/eslint-config": "^0.39.6",
+    "@types/node": "^16.14.0",
+    "eslint": "^8.43.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.7",
+    "vite-plugin-dts": "^3.3.1"
+  },
+  "dependencies": {
+    "vitest": "^0.33.0"
   }
 }

@@ -10,6 +10,10 @@
 
 ```shell
 npm install unity-richtext-converter
+# or
+yarn add unity-richtext-converter
+# or
+pnpm add unity-richtext-converter
 ```
 
 - usage
@@ -25,22 +29,22 @@ const htmltext = converter.unity2html(text);
 
 ## Development
 
-- install env, please make sure [node.js](https://nodejs.org) installed
+- install env, please make sure [node.js](https://nodejs.org) and [pnpm](https://pnpm.io) installed
 
 ```shell
-npm install
+pnpm install
 ```
 
 - build
 
 ```shell
-npm run build
+pnpm build
 ```
 
 - test
 
 ```shell
-npm run test
+pnpm test
 ```
 
 ## Unity Rich Text

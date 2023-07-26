@@ -5,7 +5,7 @@ export interface IConverter {
    * @returns {string} unity rich text result
    * @throws {Error} error exception
    */
-  html2unity(input: string): string;
+  html2unity(input: string): string
 
   /**
    * convert an unity rich text string to a standard html string
@@ -13,5 +13,5 @@ export interface IConverter {
    * @returns {string} standard html result
    * @throws {Error} error exception
    */
-  unity2html(input: string): string;
+  unity2html(input: string): string
 }
